@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linktree - Muhammadad Althof Misbahhudin</title>
+
+  <!-- Feather Icons CDN -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Bootstrap CSS CDN -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous"
+  />
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      min-height: 100vh;
+      color: white;
+    }
+
+    .container {
+      padding-top: 80px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 1rem;
+    }
+
+    .link, .youtube-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+      background-color: #ffffff10;
+      border: 1px solid #ffffff30;
+      border-radius: 10px;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      transition: background 0.3s;
+    }
+
+    .link:hover, .youtube-link:hover {
+      background-color: #ffffff20;
+    }
+
+    .offcanvas {
+      background-color: #1f1f1f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Offcanvas Hamburger Menu -->
+  <nav class="navbar bg-transparent fixed-top">
+    <div class="container-fluid">
+      <button 
+        class="btn btn-outline-light mt-3 ms-3" 
+        type="button" 
+        data-bs-toggle="offcanvas" 
+        data-bs-target="#offcanvasMenu"
+        aria-controls="offcanvasMenu"
+      >
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div 
+    class="offcanvas offcanvas-start text-bg-dark" 
+    tabindex="-1" 
+    id="offcanvasMenu" 
+    aria-labelledby="offcanvasMenuLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link text-white" href="#about">Tentang Saya</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#projects">Proyek</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#certificates">Sertifikat</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="container text-center">
+
+    <!-- Profil Utama -->
+    <section class="profile" id="about">
+      <img 
+        src="img/WhatsApp Image 2025-04-11 at 00.58.24.jpeg" 
+        alt="Foto Muhammadad Althof Misbahhudin" 
+        class="profile-img" 
+      />
+      <h1 class="name">Muhammadad Althof Misbahhudin</h1>
+
+      <a 
+        href="https://www.youtube.com/@AlthofMisbahhudin" 
+        target="_blank" 
+        class="youtube-link d-inline-flex align-items-center justify-content-center"
+      >
+        <i data-feather="youtube"></i> YouTube Channel
+      </a>
+
+      <p class="description mt-3">
+        Mahasiswa Computer Science BINUS UNIVERSITY
+      </p>
+    </section>
+
+    <!-- Daftar Link Sosial -->
+    <section class="links mt-4">
+      <a href="https://github.com/Althof05" class="link" target="_blank" rel="noopener noreferrer">
+        <i data-feather="github"></i> GitHub
+      </a>
+      <a href="https://linkedin.com/in/althofmisbahhudin" class="link" target="_blank" rel="noopener noreferrer">
+        <i data-feather="linkedin"></i> LinkedIn
+      </a>
+      <a href="https://instagram.com/mhalthof__" class="link" target="_blank" rel="noopener noreferrer">
+        <i data-feather="instagram"></i> Instagram
+      </a>
+      <a href="mailto:althofsalman@gmail.com" class="link">
+        <i data-feather="mail"></i> Email
+      </a>
+    </section>
+
+<!-- Section Sertifikat -->
+<section id="certificates" class="container mt-5 text-center">
+  <h2 class="text-white mb-4">Sertifikat Saya</h2>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <!-- Sertifikat PUBG -->
+    <div class="col">
+      <div class="card bg-dark text-white border-light">
+    
+        <img src="img/641a19cb-425d-4db1-bc14-fcbd6467bf93.JPG" class="card-img-top" alt="Sertifikat PUBG" />
+        <div class="card-body">
+          <h5 class="card-title">#1 Fast Tour BY1 PUBG</h5>
+          <p class="card-text">Sertifikat partisipasi dalam kompetisi PUBG.</p>
+          <a href="img/certifikat-pubg.jpg" class="btn btn-outline-light btn-sm" target="_blank">Lihat Sertifikat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sertifikat UI/UX BNCC -->
+    <div class="col">
+      <div class="card bg-dark text-white border-light">
+        <img src="img/5DA31F06-6F03-4189-87A7-6AF02CDA7A1B.JPEG" class="card-img-top" alt="Sertifikat UI/UX BNCC" />
+        <div class="card-body">
+          <h5 class="card-title">UI/UX BNCC Certificate</h5>
+          <p class="card-text">Sertifikat pelatihan UI/UX dari Bina Nusantara Computer Club.</p>
+          <a href="img/certifikat-uiux.jpg" class="btn btn-outline-light btn-sm" target="_blank">Lihat Sertifikat</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+  <!-- Inisialisasi Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- Bootstrap JS Bundle -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
